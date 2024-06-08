@@ -8,7 +8,6 @@ def Nombrearchivo(lista_palabras,index):
         return Nombrearchivo(lista_palabras,index+1)
     return ""
 
-
 disparadores = {
     'Tristeza': ['mal', 'llorar', 'triste', 'tristeza', 'soledad', 'desahuciado', 'solo', 'pena', 'duelo', 'depresivo', 'depresion', 'desanimado', 'sin'],
     'Miedos': ['miedo', 'asustado', 'terror', 'fobia', 'susto', 'perplejo', 'angustia', 'atonito','ansioso'],
@@ -47,7 +46,6 @@ else:
             preguntaelegida = random.choice(listaPreguntas)
         print(preguntaelegida)
         pregunta_anterior = preguntaelegida
-        respuesta = input("Ingrese su respuesta: ")
-        respuesta = respuesta.lower()
+        respuesta = input("Ingrese su respuesta: ").lower()
 
 print("El juego ha terminado! Esperamos que haya sido de tu agrado.")
